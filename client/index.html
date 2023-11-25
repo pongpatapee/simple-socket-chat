@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Socket Room chat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+      integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="app.js"></script>
+  </head>
+
+  <body>
+    <h1>Socketio Chat!</h1>
+
+    <div id="message-container"></div>
+
+    <form id="form">
+      <label for="message-input">Message</label>
+      <input type="text" id="message-input" />
+      <button type="submit" id="message-btn">Send</button>
+      <label for="room-input">Room</label>
+      <input type="text" id="room-input" />
+      <button id="join-btn">Join</button>
+    </form>
+  </body>
+</html>
